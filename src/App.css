@@ -1,22 +1,133 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  height: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+html,
+body {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100%;
+}
+button {
+  font-family: 'Poppins', sans-serif;
+}
+button i {
+  font-size: 14px;
+}
+.logo {
+  position: fixed;
+  left: 10%;
+  top: 5%;
+  width: 50px;
+  height: 50px;
+  z-index: 99999999999999999;
+  opacity: 0.8;
+}
+
+#shoutoutForm {
+  width: 95%;
+  position: fixed;
+  min-height: 50%;
+  background: #202122;
+  z-index: 99999999999999999;
+  top: 15%;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  padding: 10px;
 }
+#shoutoutForm p {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #575757;
+}
+#shoutoutForm input {
+  width: 60%;
+  padding: 20px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #191a1b;
+  outline: none;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+#shoutoutForm input[type='submit'] {
+  background: #faba48;
+  border-radius: 30px;
+  margin-top: 10px;
+  line-height: 0;
+  width: 30%;
+  font-weight: 500;
+}
+#shoutoutForm input[type='file'] {
+  background: none;
+  width: 60%;
+  line-height: 0;
+}
+@media screen and (min-width: 780px) {
+  button {
+    font-family: 'Poppins', sans-serif;
+  }
+  button i {
+    font-size: 14px;
+  }
+  .logo {
+    position: fixed;
+    left: 10%;
+    top: 5%;
+    width: 50px;
+    height: 50px;
+    z-index: 99999999999999999;
+    opacity: 0.8;
+  }
 
-.App-link {
-  color: #09d3ac;
+  #shoutoutForm {
+    width: 40%;
+    position: fixed;
+    min-height: 50%;
+    background: #202122;
+    z-index: 99999999999999999;
+    left: 30%;
+    top: 10%;
+    border-radius: 4px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #shoutoutForm p {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #575757;
+  }
+  #shoutoutForm input {
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #191a1b;
+    outline: none;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  #shoutoutForm input[type='submit'] {
+    background: #faba48;
+    border-radius: 30px;
+    margin-top: 10px;
+    line-height: 0;
+    width: 30%;
+    font-weight: 500;
+  }
 }
