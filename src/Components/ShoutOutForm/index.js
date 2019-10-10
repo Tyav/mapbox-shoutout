@@ -26,6 +26,9 @@ class ShoutOutForm extends Component {
       <>
         <form id="shoutoutForm">
           <p>Fill to Create Shout Out</p>
+          <div id="imagePreview">
+            <img src="/assets/img/textimage.jpg" alt="profile preview" />
+          </div>
           <InputField
             type="text"
             id="name"
